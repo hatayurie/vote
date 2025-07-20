@@ -64,8 +64,7 @@
     function drawRect(x,y,w,h,color){ ctx.fillStyle = color; ctx.fillRect(x,y,w,h); }
     function drawLetter(ball){
       ctx.fillStyle = ball.color;
-      // 文字サイズを 90% に縮小 (96px → 86px)
-      ctx.font = 'bold 86px Arial';
+      ctx.font = 'bold 75px Arial';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillText(ball.letter, ball.x, ball.y);
